@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula HTML</title>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Minha Página HTML</h1>
+        <a href="page.html">Próxima Página</a>
+    </header>
+    <!-- Conteúdo da Página -->
+    <main>
+        <section>
+            <div class="caixote">   
+                <h2><i>Minha Aula de HTML</i></h2>
+            </div>
+            <h2>Seção de Listas:</h2>
+            <h3>Lista não Ordenada:</h3>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+            <h3>Lista Ordenada:</h3>
+            <ol>
+                <li>Primeiro Item</li>
+                <li>Segundo Item</li>
+                <li>Terceiro Item</li>
+            </ol>
+        </section>
+        <section>
+            <h2>Seção de Imagens e Vídeos</h2>
+            <figure>
+                <h3>Imagem - Pato Donald</h3>
+                <img src="assets/patodonald.jpg" alt="pato donald" width="300">
+            </figure>
+            <figure>
+                <h3>Vídeo - Melhor Música feita por IA</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/jVH0JHEtRLI?si=pOB3NZ3ilWdIT_an" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </figure>
+        </section>
+        <section>
+            <h2>Formulário Simples</h2>
+            <form>
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="inpNome">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="inpEmail">
+                </div>
+                <div>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea name="mensagem" id="inpMensagem"></textarea>
+                </div>
+                <div>
+                    <label for="idade">Idade:</label>
+                    <input type="number" name="idade" id="inpIdade" min="18" max="99">
+                </div>
+                <div>
+                    <label for="cor">Cor:</label>
+                    <input type="color" name="cor" id="inpCor">
+                </div>
+                <div>
+                    <label for="anexo">Anexo:</label>
+                    <input type="file" name="anexo" id="inpAnexo">
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <!-- Rodapé -->
+    <footer>
+        <p>
+            2025 - &copy; Todos Diretos Reservados - Fischario Enterprises
+        </p>
+    </footer>
+</body>
+</html>
