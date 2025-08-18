@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aula HTML</title>
+    <link rel="stylesheet" href="style/pagina-inicial.css">
 </head>
 <body>
+    
     <!-- Cabeçalho -->
     <header>
         <h1>Minha Página HTML</h1>
@@ -16,7 +18,7 @@
     <main>
         <section>
             <div class="caixote">   
-                <h2><i>Minha Aula de HTML</i></h2>
+                <h2 id="exemplo-get"><i>Minha Aula de HTML</i></h2>
             </div>
             <h2>Seção de Listas:</h2>
             <h3>Lista não Ordenada:</h3>
@@ -80,5 +82,35 @@
             2025 - &copy; Todos Diretos Reservados - Fischario Enterprises
         </p>
     </footer>
+    <script>
+        // SELECIONA um ID (Elemento): (document.getElementById('---'))
+        const element = document.getElementById('exemplo-get');
+        console.log("elemento (id) ->", element);
+        element.style.color = 'black';
+
+        // SELECIONA uma CLASSE: (document.querySelector('---'))
+        const classeQuery = document.querySelector('.caixote');
+        console.log("classe ->", classeQuery);
+
+        // CRIA um ELEMENTO: (document.createElement('---'))
+        const novoH1 = document.createElement('h1');
+        novoH1.textContent = "NOVO H1 AQUI! CRIADO POR JAVASCRIPT";
+        novoH1.style.color = 'blue';
+        console.log("novo h1 ->", novoH1);
+
+        // JUNTA um ELEMENTO / CLASSE: (---.appendChild('---'))
+        classeQuery.appendChild(novoH1);
+
+// ------------------------- exercicios do sor -------------------------------
+
+        // 1 - mudar cor do header:
+        const header = document.getElementsByTagName('header')[0];
+        header.style.backgroundColor = 'blue';
+
+        // 2 - mudar tamanho da letra do footer:
+        const footer = document.getElementsByTagName('footer')[0];
+        footer.style.fontSize = '10px';
+
+    </script>
 </body>
 </html>
